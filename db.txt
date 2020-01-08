@@ -1,0 +1,10 @@
+Connection from SQL Client
+mysql -h database-1.cy1o7goo5ka8.us-east-2.rds.amazonaws.com -P 3306 -u admin -p
+
+password -> mysqladmin
+
+Table Details
+CREATE DATABASE VICTORY;
+use VICTORY;
+CREATE TABLE Members ( id INT(9) UNSIGNED AUTO_INCREMENT PRIMARY KEY, firstname VARCHAR(30), lastname VARCHAR(30), email VARCHAR(50), reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP );
+ALTER TABLE Members AUTO_INCREMENT=200000000;
